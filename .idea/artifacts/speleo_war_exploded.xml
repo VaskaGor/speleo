@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="speleo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/speleo_war_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="speleo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="speleo" />
+          <element id="jpa-descriptors" facet="speleo/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JPA 2.1-JPA 2.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="speleo/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
