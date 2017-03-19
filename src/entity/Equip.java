@@ -8,12 +8,19 @@ public class Equip {
     @Id
     @GeneratedValue
     private int id;
+
     @Column(nullable = false)
     private String brand;
+
     @Column(nullable = false)
     private String color;
+
     @Column(nullable = false)
     private boolean status;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name="equip_type_id", unique = true, nullable = false)
+    private EquipType equipType;
 
     public Equip() {
     }
@@ -57,5 +64,13 @@ public class Equip {
                 ", brand='" + brand + '\'' +
                 ", color='" + color + '\'' +
                 '}';
+    }
+
+    public EquipType getEquipType() {
+        return equipType;
+    }
+
+    public void setEquipType(EquipType equipType) {
+        this.equipType = equipType;
     }
 }

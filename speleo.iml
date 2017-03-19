@@ -24,7 +24,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="DataSourceEx" />
-          <factory-entry name="SpeleoAdminDS" />
+          <factory-entry name="SpeleoAdminDS" value="c8e2faf9-78e1-499e-9a3b-3850b5842caa" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/web/WEB-INF/persistence.xml" />
       </configuration>

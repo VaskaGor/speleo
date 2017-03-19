@@ -27,6 +27,8 @@ public class ShowAllEquip extends HttpServlet {
         Writer writer = resp.getWriter();
         List<Equip> equips = dao.findAll();
 
+
+
         if (equips == null || equips.isEmpty()){
             writer.write("You have no equips");
         }else {
